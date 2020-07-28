@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutmeapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melanie Jackson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-iE-m1H">
+                                <rect key="frame" x="122" y="30" width="204" height="21"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="087017-352621-63783303" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-rI-DAN">
+                                <rect key="frame" x="-95" y="89" width="579.66666666666663" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="5dP-gb-sCc"/>
+                                    <constraint firstAttribute="width" constant="579.66666666666663" id="c1n-ww-i4Q"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smh-oa-FVz">
+                                <rect key="frame" x="120" y="424" width="165" height="29"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <state key="normal" title="Click for facts!">
+                                    <color key="titleColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vD-am-UXg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0139" translatesAutoresizingMaskIntoConstraints="NO" id="RYP-6o-cy1">
+                                <rect key="frame" x="122" y="280" width="327" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="fvR-2D-Jez"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="wordWrap" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RjN-PO-wuP">
+                                <rect key="frame" x="31" y="448" width="363" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="v9Z-LC-bQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63325082164128865" green="0.92577767308121828" blue="0.90408793077813043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XEa-iE-m1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="6P7-H1-uXw"/>
+                            <constraint firstItem="eKr-rI-DAN" firstAttribute="top" secondItem="XEa-iE-m1H" secondAttribute="bottom" constant="38" id="6VF-wW-Hnh"/>
+                            <constraint firstItem="XEa-iE-m1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7Uv-Vy-zC6"/>
+                            <constraint firstItem="smh-oa-FVz" firstAttribute="top" secondItem="RYP-6o-cy1" secondAttribute="bottom" constant="16" id="8iv-iS-pk9"/>
+                            <constraint firstItem="RYP-6o-cy1" firstAttribute="top" secondItem="eKr-rI-DAN" secondAttribute="bottom" constant="21" id="AAF-PW-OJy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RjN-PO-wuP" secondAttribute="trailing" constant="20" id="ABj-Ul-daY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eKr-rI-DAN" secondAttribute="trailing" constant="-90.666666666666629" id="Cav-Eu-Xk4"/>
+                            <constraint firstItem="smh-oa-FVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="JHf-xY-ixe"/>
+                            <constraint firstAttribute="trailing" secondItem="RYP-6o-cy1" secondAttribute="trailing" constant="-35" id="Xom-6e-GaP"/>
+                            <constraint firstItem="RjN-PO-wuP" firstAttribute="top" secondItem="smh-oa-FVz" secondAttribute="bottom" constant="-5" id="hk2-YH-DhY"/>
+                            <constraint firstItem="RYP-6o-cy1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="htl-wH-hvx"/>
+                            <constraint firstItem="XEa-iE-m1H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="17" id="iOd-Uv-W4a"/>
+                            <constraint firstItem="RjN-PO-wuP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="m91-Ct-pL0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smh-oa-FVz" secondAttribute="trailing" constant="129" id="tXg-e3-U0c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="RjN-PO-wuP" id="vQo-Qc-4ut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Psp-UM-agz">
+                    <rect key="frame" x="0.0" y="0.0" width="168" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="15"/>
+                    <state key="normal" title="Click for facts!">
+                        <color key="titleColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVM-o1-D8c"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="115.7608695652174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="087017-352621-63783303" width="4618" height="3464"/>
+        <image name="IMG_0139" width="4032" height="3024"/>
+    </resources>
+</document>
